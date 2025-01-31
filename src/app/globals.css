@@ -2,20 +2,44 @@
 @tailwind components;
 @tailwind utilities;
 
-/* :root {
-  --background: #ffffff;
-  --foreground: #171717;
+
+
+
+.my-button{
+  cursor: pointer;
+  position: relative;
+  color: #ffff;
+  border-radius: 8px;
+  background-color: #9B2C2C;
+  transition: all 0.2s cubic-bezier(0.23, 1, 0.320, 1);
+  overflow: hidden;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.my-button::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 50px;
+  height: 50px;
+  border-radius: inherit;
+  scale: 0;
+  z-index: -1;
+  background-color: #ffff;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-} */
+.my-button:hover::before {
+  scale: 3;
+}
+
+.my-button:hover {
+  color: #9B2C2C;
+  border: 0.5px solid #9B2C2C;
+  scale: 1.1;
+  box-shadow: 0 0px 6px rgba(230, 4, 4, 0.4);
+}
+
+.my-button:active {
+  scale: 1;
+}
