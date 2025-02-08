@@ -4,81 +4,65 @@ import Image from "next/image";
 const HeroSection = () => {
   return (
     <section
-      className="relative bg-cover bg-center"
+      className="relative bg-cover bg-center min-h-screen flex items-center px-4 md:px-10"
       style={{ backgroundImage: 'url("/your-bg-image.jpg")' }}
     >
-      <div className="container mx-auto px-4 py-16 text-[#000] flex flex-col md:flex-row items-center justify-around">
+      <div className="container mx-auto flex flex-col lg:flex-row items-center justify-between space-y-10 lg:space-y-0">
         {/* Left Section: Content */}
-        <div className="w-full md:w-1/2 text-center space-y-10 md:text-left md:pl-[130px]">
-          <h1 className="text-4xl font-bold mb-4">
+        <div className="w-full lg:w-1/2 text-center lg:text-left space-y-6">
+          <h1 className="text-3xl md:text-5xl font-bold leading-tight">
             Revolutionary Way To Educate
           </h1>
-          <p className="mb-6 text-lg">
+          <p className="text-lg text-gray-700 max-w-md mx-auto lg:mx-0">
             Online education is electronically supported learning that relies on
             the Internet for teacher/student interaction and the distribution of
             class materials.
           </p>
-          <button
-            className="my-button px-5 py-2"
-          >
+          <button className="px-6 py-3 bg-[#9B2C2C] text-white font-semibold rounded-lg shadow-lg hover:bg-red-800 transition">
             Register Now
           </button>
         </div>
 
         {/* Right Section: Images */}
-        <div className="w-full md:w-1/2 mt-[130px] md:mt-0 relative">
-          <Image
-            src="/Teacher.jpg"
-            alt="Image 1"
-            layout="intrinsic"
-            width={300}
-            height={300}
-            className="w-48 absolute top-12 md:top-10 md:left-10"
-          />
+        <div className="relative w-full lg:w-1/2 flex justify-center">
+          <div className="relative w-[90%] max-w-[400px] md:max-w-[450px] lg:max-w-[500px]">
+            {/* Teacher Image */}
+            <Image
+              src="/Teacher.jpg"
+              alt="Teacher"
+              width={250}
+              height={250}
+              className="absolute top-8 left-0 w-[120px] sm:w-[160px] md:w-[200px] lg:w-[250px]"
+            />
+            {/* Student Image */}
+            <Image
+              src="/Student.png"
+              alt="Student"
+              width={200}
+              height={200}
+              className="absolute bottom-[-40px] right-0 w-[100px] sm:w-[140px] md:w-[180px] lg:w-[200px]"
+            />
+            {/* Icons Image */}
+            <Image
+              src="/Icons.png"
+              alt="Icons"
+              width={180}
+              height={180}
+              className="absolute top-[120px] left-[50%] transform -translate-x-1/2 w-[70px] sm:w-[100px] md:w-[120px]"
+            />
 
-          <Image
-            src="/Student.png"
-            alt="Girl with Phone"
-            layout="intrinsic"
-            width={210}
-            height={210}
-            className="w-48 absolute bottom-[-70px] md:right-[140px] right-[0px]  transform translate-y-12"
-          />
-          {/* <Image
-            src="/Chat.png"
-            alt="Image 1"
-            layout="intrinsic"
-            width={210}
-            height={210}
-            className="md:w-48 w-36 absolute md:top-[-120px] top-[-70px] md:left-32 left-[76px]"
-          /> */}
-          <Image
-            src="/Icons.png"
-            alt="Image 1"
-            layout="intrinsic"
-            width={200}
-            height={200}
-            className="w-28 absolute md:top-[130px] md:left-[300px] top-[140px] left-48"
-          />
-          {/* chat msg section */}
-          <div className="w-full absolute md:top-0 md:right-0 right-[50px] top-[10px]">
-            <div className=" absolute top-[23px] left-[130px]">
-              <button className="bg-gray-100 text-[#9B2C2C] font-semibold px-3 py-1 rounded-lg shadow-md border border-gray-200 relative before:content-[''] before:absolute before:bottom-[-1px] before:left-[-1px] before:w-3 before:h-3 before:bg-gray-100 before:rotate-45 before:translate-x-[%] before:border-l before:border-b before:border-gray-200">
+            {/* Chat Messages */}
+            <div className="absolute top-[-50px] left-[20%] space-y-3">
+              <button className="bg-gray-100 text-[#9B2C2C] font-semibold px-3 py-1 rounded-lg shadow-md border border-gray-200">
                 Hi!
               </button>
-            </div>
-            <div className=" absolute top-[-23px] left-[130px]">
-              <button className="bg-gray-100 text-[#9B2C2C] font-semibold px-2 py-1 rounded-lg shadow-md border border-gray-200 relative before:content-[''] before:absolute before:bottom-[-1px] before:left-[-1px] before:w-3 before:h-2 before:bg-gray-100 before:rotate-45 before:translate-x-[%] before:border-l before:border-b before:border-gray-200">
+              <button className="bg-gray-100 text-[#9B2C2C] font-semibold px-2 py-1 rounded-lg shadow-md border border-gray-200">
                 Are you ready!
               </button>
-            </div>
-            <div className=" absolute top-[-65px] left-[150px]">
-              <button className="text-white bg-[#9B2C2C] font-semibold px-2 py-1 rounded-lg shadow-lg border-2 border-[#9B2C2C]  relative before:content-[''] before:absolute before:bottom-[-2px] before:left-[152px] before:w-3 before:h-2 before:bg-[#9B2C2C] before:rotate-45 before:translate-x-[%]  ">
-                Ready 24/7 to laern.
+              <button className="text-white bg-[#9B2C2C] font-semibold px-2 py-1 rounded-lg shadow-lg border-2 border-[#9B2C2C]">
+                Ready 24/7 to learn.
               </button>
-            </div>
-            <div className=" absolute top-[-110px] left-[260px]">
-              <button className="text-white bg-[#9B2C2C] font-semibold px-2 py-1 rounded-lg shadow-lg border-2 border-[#9B2C2C]  relative before:content-[''] before:absolute before:bottom-[-2px] before:left-[44px] before:w-3 before:h-2 before:bg-[#9B2C2C] before:rotate-45 before:translate-x-[%]  ">
+              <button className="text-white bg-[#9B2C2C] font-semibold px-2 py-1 rounded-lg shadow-lg border-2 border-[#9B2C2C]">
                 Hello
               </button>
             </div>
