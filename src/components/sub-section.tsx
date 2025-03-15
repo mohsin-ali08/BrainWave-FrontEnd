@@ -20,9 +20,9 @@ const Subjects = () => {
   return (
     <div>
       {/* 📌 Subject Coverage Section */}
-      <section className="flex flex-col items-center text-center py-16 px-5">
+      <section className="flex flex-col items-center text-center px-5 pb-12">
         {/* Heading */}
-        <h2 className="text-[1.6rem] md:text-4xl font-bold text-gray-800" style={{ fontFamily: 'Playfair Display, serif' }}>
+        <h2 className="text-[2rem] md:text-4xl font-bold text-gray-800" style={{ fontFamily: 'Playfair Display, serif' }}>
           <span  className="text-[#9B2C2C]">Comprehensive</span> Subject Coverage
         </h2>
 
@@ -47,7 +47,7 @@ const Subjects = () => {
       </section>
 
       {/* 📌 Big Section with Image & Content */}
-      <section className="flex flex-col md:flex-row items-center justify-around px-6 py-16 w-full bg-[#9B2C2C] mx-auto">
+      <section className="flex flex-col md:flex-row items-center justify-around px-6 py-16 w-full bg-[#9B2C2C] mx-auto rounded-lg ">
         
      
         <div className="relative w-full md:w-1/2 flex justify-center">
@@ -61,11 +61,11 @@ const Subjects = () => {
         </div>
 
        
-        <div className="w-full md:w-1/2 text-center md:text-left mt-8 md:mt-0">
-          <h2 className="md:text-4xl text-[1.6rem] font-bold text-white">
+        <div className="w-full md:w-1/2 text-center md:text-left mt-8 md:mt-0 ">
+          <h2 className="md:text-4xl text-[2rem] font-bold text-white">
             Learn Smarter with Brainwave!
           </h2>
-          <p className="text-lg text-white mt-4">
+          <p className=" text-white text-justify mt-4">
             At Brainwave, we empower learners of all ages to achieve academic excellence. From personalized tutoring to engaging study plans, we provide the tools and support you need to excel in your studies and beyond. Join a community of curious minds and make learning a rewarding experience.
           </p>
 

@@ -4,13 +4,13 @@ import Image from "next/image";
 const HeroSection = () => {
   return (
     <section
-      className="relative bg-cover bg-center  "
+      className="relative h-screen bg-cover bg-center  "
       style={{ backgroundImage: 'url("/Background.png")' }}
     >
-      <div className=" mx-auto px-4 py-12 md:py-36 text-[#000] flex flex-col md:flex-row items-center justify-around">
+      <div className=" mx-auto px-4 pt-12 md:pt-24 text-[#000] flex flex-col md:flex-row items-center justify-around">
         {/* Left Section: Content */}
         <div className="w-full md:w-1/2 text-center  md:text-left md:pl-[130px]">
-          <h1 className="text-[28px] md:text-5xl font-bold mb-6" style={{ fontFamily: 'Playfair Display, serif' }}>
+          <h1 className="text-[2rem] md:text-5xl font-bold mb-6" style={{ fontFamily: 'Playfair Display, serif' }}>
             Revolutionary Way To Educate.
           </h1>
           <p className="pb-10 text-base md:text-lg ">
@@ -23,7 +23,7 @@ const HeroSection = () => {
 
         {/* imgs <section     */}
 
-        <div className="w-full md:w-1/2 mt-[130px] md:mt-0  relative md:bottom-12">
+        <div className="w-full md:w-1/2 mt-[200px] md:mt-0  relative md:bottom-12">
           <Image
             src="/Teacher.jpg"
             alt="Image 1"

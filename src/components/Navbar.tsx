@@ -19,7 +19,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className={`bg-white p-2 shadow-md fixed top-0 left-0 w-full z-50 transition-all duration-300 ease-in-out ${isMounted ? "fade-in" : ""}`}>
+    <nav className={`bg-white p-2 shadow fixed top-0 left-0 w-full z-50 transition-all duration-300 ease-in-out ${isMounted ? "fade-in" : ""}`}>
       <div className="container mx-auto flex items-center justify-between md:justify-around">
         {/* Logo */}
         <div className={`transition-transform duration-500 ease-in-out transform hover:scale-110 ${isMounted ? "animate-fade-in" : ""}`}>
