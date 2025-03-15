@@ -23,7 +23,7 @@ const HeroSection = () => {
 
         {/* imgs <section     */}
 
-        <div className="w-full md:w-1/2 mt-[200px] md:mt-0  relative md:bottom-12">
+        <div className="w-full md:w-1/2 mt-[120px] md:mt-0  relative md:bottom-12">
           <Image
             src="/Teacher.jpg"
             alt="Image 1"

@@ -13,7 +13,9 @@ const Home = () => {
     <div className="pt-12">
       <Navbar />
       <Hero />
+      <div className="pt-12">
         <Subsection />
+      </div>
       <div className="pt-12 md:pt-24">
         <Webinar />
         <AchievementQA />
