@@ -1,8 +1,11 @@
 import React from 'react';
 import { FiMessageCircle } from 'react-icons/fi';
+import Navbar from '@/components/Navbar';
 
 const Tutors = () => {
   return (
+    <>
+    <Navbar />
     <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-r from-pink-100 via-purple-100 to-blue-100">
       <div className="bg-white shadow-xl rounded-3xl p-10 max-w-4xl w-full mx-4 text-center animate-fade-in">
         <h1 className="text-4xl font-bold text-[#9B2C2C] mb-6">Welcome to the  Webinar Page!</h1>
@@ -32,6 +35,8 @@ const Tutors = () => {
         </button>
       </div>
     </div>
+    
+    </>
   );
 };
 
