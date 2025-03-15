@@ -1,13 +1,28 @@
+import Webinar from "@/components/webinars";
 import Hero from "../components/Hero";
-
-
+import Subsection from "../components/sub-section";
+import AchievementQA from "../components/AchievementQA";
+import QuestionAnswer from "../components/Question&Ans";
+import Contact from "../components/Contact";
+import Navbar from "@/components/Navbar";
 
 const Home = () => {
   return (
-    <div>
+    <div className="">
+       <Navbar/>
+      <Hero />
+      <div className="md:pt-0 pt-40">
 
-      <Hero/>
-      {/* <h1>Welcome to BrainWave Frontend</h1> Customize this */}
+        <Subsection />
+      </div>
+      <div className="pt-12 md:pt-24">
+        <Webinar />
+        <AchievementQA />
+        <div className="pt-12 md:pt-36">
+          <QuestionAnswer />
+        </div>
+      </div>
+        <Contact />
     </div>
   );
 };
